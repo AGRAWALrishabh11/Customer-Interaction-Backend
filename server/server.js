@@ -12,7 +12,7 @@ const app = express();
 connectDB();
 
 app.use(cors({
-  origin: 'https://customer-interaction-frontend.vercel.app/' 
+  origin: 'https://customer-interaction-frontend.vercel.app' 
 }));
 app.use(bodyParser.json());
 
