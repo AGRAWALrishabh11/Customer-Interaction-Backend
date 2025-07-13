@@ -11,7 +11,9 @@ const path = require('path');
 const app = express();
 connectDB();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://customer-interaction-frontend.vercel.app/' 
+}));
 app.use(bodyParser.json());
 
 // 👤 Register Route
